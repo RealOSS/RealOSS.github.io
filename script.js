@@ -53,7 +53,7 @@ function pink(){
 	document.body.style.setProperty("--fnt", "#ffffff");
 	document.body.style.setProperty("--fsc", "#ffffff");
 	document.body.style.setProperty("--hvr", "#333333");
-	document.body.style.setProperty("--bgi", "url('./resources/pink.png')");
+	document.body.style.setProperty("--bgi", "url('./pink.png')");
 	localStorage.setItem("theme", "pink");
 }
 function gold(){
@@ -62,7 +62,7 @@ function gold(){
 	document.body.style.setProperty("--fnt", "#ffffff");
 	document.body.style.setProperty("--fsc", "#000000");
 	document.body.style.setProperty("--hvr", "#333333");
-	document.body.style.setProperty("--bgi", "url('./resources/gold.png')");
+	document.body.style.setProperty("--bgi", "url('./gold.png')");
 	localStorage.setItem("theme", "gold");
 }
 function mynt(){
@@ -71,7 +71,7 @@ function mynt(){
 	document.body.style.setProperty("--fnt", "#ffffff");
 	document.body.style.setProperty("--fsc", "#000000");
 	document.body.style.setProperty("--hvr", "#d4f1f4");
-	document.body.style.setProperty("--bgi", "url('./resources/mynt.png')");
+	document.body.style.setProperty("--bgi", "url('./mynt.png')");
 	localStorage.setItem("theme", "mynt");
 }
 
@@ -88,36 +88,36 @@ if(!localStorage.getItem("theme")){
 }
 
 // LEGACY THEME
-function pink(){
+function oldPink(){
 	document.body.style.setProperty("--prm", "#ffa5b8");
 	document.body.style.setProperty("--sec", "#f52b8f");
 	document.body.style.setProperty("--fnt", "#ffffff");
 	document.body.style.setProperty("--hvr", "#333333");
-	document.body.style.setProperty("--bgi", "url('pink.png')");
+	document.body.style.setProperty("--bgi", "url('legacy/old_pink.png')");
 	localStorage.setItem("theme", "pink");
 }
-function blue(){
+function oldBlue(){
 	document.body.style.setProperty("--prm", "#05445E");
 	document.body.style.setProperty("--sec", "#5bb4aa");
 	document.body.style.setProperty("--fnt", "#ffffff");
 	document.body.style.setProperty("--hvr", "#d4f1f4");
-	document.body.style.setProperty("--bgi", "url('blue.png')");
+	document.body.style.setProperty("--bgi", "url('legacy/old_blue.png')");
 	localStorage.setItem("theme", "blue");
 }
-function gold(){
+function oldGold(){
 	document.body.style.setProperty("--prm", "#ca9c16");
 	document.body.style.setProperty("--sec", "#faed33");
 	document.body.style.setProperty("--fnt", "#ffffff");
 	document.body.style.setProperty("--hvr", "#333333");
-	document.body.style.setProperty("--bgi", "url('gold.png')");
+	document.body.style.setProperty("--bgi", "url('legacy/old_gold.png')");
 	localStorage.setItem("theme", "gold");
 }
-function mint(){
+function oldMint(){
 	document.body.style.setProperty("--prm", "#000000");
 	document.body.style.setProperty("--sec", "#00ffc2");
 	document.body.style.setProperty("--fnt", "#ffffff");
 	document.body.style.setProperty("--hvr", "#d4f1f4");
-	document.body.style.setProperty("--bgi", "url('mint.png')");
+	document.body.style.setProperty("--bgi", "url('legacy/old_mint.png')");
 	localStorage.setItem("theme", "mint");
 }
 function testopen(){
