@@ -44,7 +44,7 @@ function plum(){
 	document.body.style.setProperty("--fnt", "#ffffff");
 	document.body.style.setProperty("--fsc", "#ffffff");
 	document.body.style.setProperty("--hvr", "#d4f1f4");
-	document.body.style.setProperty("--bgi", "url('/resources/plum.png')");
+	document.body.style.setProperty("--bgi", "url('./plum.png')");
 	localStorage.setItem("theme", "plum");
 }
 function pink(){
@@ -53,7 +53,7 @@ function pink(){
 	document.body.style.setProperty("--fnt", "#ffffff");
 	document.body.style.setProperty("--fsc", "#ffffff");
 	document.body.style.setProperty("--hvr", "#333333");
-	document.body.style.setProperty("--bgi", "url('/resources/pink.png')");
+	document.body.style.setProperty("--bgi", "url('./resources/pink.png')");
 	localStorage.setItem("theme", "pink");
 }
 function gold(){
@@ -62,7 +62,7 @@ function gold(){
 	document.body.style.setProperty("--fnt", "#ffffff");
 	document.body.style.setProperty("--fsc", "#000000");
 	document.body.style.setProperty("--hvr", "#333333");
-	document.body.style.setProperty("--bgi", "url('/resources/gold.png')");
+	document.body.style.setProperty("--bgi", "url('./resources/gold.png')");
 	localStorage.setItem("theme", "gold");
 }
 function mynt(){
@@ -71,7 +71,7 @@ function mynt(){
 	document.body.style.setProperty("--fnt", "#ffffff");
 	document.body.style.setProperty("--fsc", "#000000");
 	document.body.style.setProperty("--hvr", "#d4f1f4");
-	document.body.style.setProperty("--bgi", "url('/resources/mynt.png')");
+	document.body.style.setProperty("--bgi", "url('./resources/mynt.png')");
 	localStorage.setItem("theme", "mynt");
 }
 

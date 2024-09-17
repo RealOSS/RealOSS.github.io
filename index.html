@@ -1,17 +1,18 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" dir="ltr">
-        <meta name="author" content="Arif & Asyraf">
-        <meta name="title" content="RealEdu">
-        <meta name="description" content="RealEdu is a website to unify education">
-        <meta name="viewport" content="width=device-width initial-scale=1.0">
-        <title>RealEdu</title>
+		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" dir="ltr">
+		<meta name="author" content="Arif & Asyraf">
+		<meta name="title" content="RealEdu">
+		<meta name="description" content="RealEdu is a website to unify education">
+		<meta name="viewport" content="width=device-width initial-scale=1.0">
+		<title>RealEdu</title>
 		<link rel="stylesheet" href="./resources/stylesheet.css">
 		<link rel="shortcut icon" href="./resources/favicon.png">
 	</head>
 	<body onload="console.log(localStorage.getItem('openmenu')); testopen()">
 		<script src="script.js"></script>
+		<script src="timer.js"></script>
 		<header>
 			<div class="more">
 				<button id="frontboard" onclick="location.reload();" type="button"> RealEdu </button>
@@ -38,36 +39,45 @@
 					<div class="topic">
 						Primary School
 					</div>
-            	</div>
-        	</button>
+				</div>
+			</button>
 			<button type="button" class="tab" onclick="opentab('menu2')">
 				<div class="card">
 					<div class="topic">
 						Secondary School
 					</div>
-            	</div>
-        	</button>
+				</div>
+			</button>
 		</div>
 		<div id="menu1" class="maintabs" style="display:none">
-  			<ul>
-  				<li><a id="mlink" href="./ps/year1.html" class="psli"> Year 1 </a></li>
-  				<li><a id="mlink" href="./ps/year2.html" class="psli"> Year 2 </a></li>
-  				<li><a id="mlink" href="./ps/year3.html" class="psli"> Year 3 </a></li>
-  				<li><a id="mlink" href="./ps/year4.html" class="psli"> Year 4 </a></li>
-  				<li><a id="mlink" href="./ps/year5.html" class="psli"> Year 5 </a></li>
-  				<li><a id="mlink" href="./ps/year6.html" class="psli"> Year 6 </a></li>
-  			</ul>
+			<ul>
+				<li><a id="mlink" href="./ps/year1.html" class="psli"> Year 1 </a></li>
+				<li><a id="mlink" href="./ps/year2.html" class="psli"> Year 2 </a></li>
+				<li><a id="mlink" href="./ps/year3.html" class="psli"> Year 3 </a></li>
+				<li><a id="mlink" href="./ps/year4.html" class="psli"> Year 4 </a></li>
+				<li><a id="mlink" href="./ps/year5.html" class="psli"> Year 5 </a></li>
+				<li><a id="mlink" href="./ps/year6.html" class="psli"> Year 6 </a></li>
+			</ul>
 		</div>
 		<div id="menu2" class="maintabs" style="display:none">
-  			<ul>
-  				<li><a id="mlink" href="./ss/form1.html" class="ssli"> Form 1 </a></li>
-  				<li><a id="mlink" href="./ss/form2.html" class="ssli"> Form 2 </a></li>
-  				<li><a id="mlink" href="./ss/form3.html" class="ssli"> Form 3 </a></li>
-  				<li><a id="mlink" href="./ss/form4.html" class="ssli"> Form 4 </a></li>
-  				<li><a id="mlink" href="./ss/form5.html" class="ssli"> Form 5 </a></li>
-  				<li><a id="mlink" href="./ss/additional.html" class="ssli"> Additional Streams </a></li>
-  			</ul>
+			<ul>
+				<li><a id="mlink" href="./ss/form1.html" class="ssli"> Form 1 </a></li>
+				<li><a id="mlink" href="./ss/form2.html" class="ssli"> Form 2 </a></li>
+				<li><a id="mlink" href="./ss/form3.html" class="ssli"> Form 3 </a></li>
+				<li><a id="mlink" href="./ss/form4.html" class="ssli"> Form 4 </a></li>
+				<li><a id="mlink" href="./ss/form5.html" class="ssli"> Form 5 </a></li>
+				<li><a id="mlink" href="./ss/additional.html" class="ssli"> Additional Streams </a></li>
+			</ul>
 		</div>
+		<hr>
+		<h1 id="descbar" style="display: inline-block;">
+			Study Timer
+		</h1>
+		<br>
+		<button id="rtWork" onclick="startTimer(0, 5, 'keje');swbut('rtRest','rtWork');" style="display: inline-block;">work</button>
+		<button id="rtRest" onclick="startTimer(0, 3, 'rehat');swbut('rtWork','rtRest');" style="display: none;">rest</button>
+		<h1 id="rtdisp">
+		</h1>
 		<footer>
 			Copyright 2023 by PioneersMTNP. All Rights Reserved.
 		</footer>
