@@ -1,4 +1,6 @@
-function startTimer(xMin, xSec, message){
+function startTimer(xMin, xSec, message, buta, butb){
+		document.getElementById(buta).style.display = "none";
+
 	let timeOut = setInterval(() => {
 
 		let showMin = xMin;
@@ -14,6 +16,7 @@ function startTimer(xMin, xSec, message){
 			xSec = 60;
 		}else if(xSec == 0 && xMin == 0){
 			document.getElementById("rtdisp").innerText = message;
+			document.getElementById(butb).style.display = "inline-block";
 			//alert(message);
 			clearInterval(timeOut);
 		}
@@ -22,8 +25,7 @@ function startTimer(xMin, xSec, message){
 	}, (1000));
 }
 
-function swbut(a, b){
+function showbut(a){
 	document.getElementById(a).style.display = "inline-block";
-	document.getElementById(b).style.display = "none";
 }
 //startTimer(0, 5, "Time for a break!")
