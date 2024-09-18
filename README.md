@@ -1,4 +1,4 @@
-![REALEDU LOGO](resources/icon.png)  
+![REALEDU LOGO](resources/favicon.png)  
 ## RealEdu  
 ### An innovative project to unify learning.  
 ## Our mission  

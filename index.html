@@ -69,19 +69,32 @@
 				<li><a id="mlink" href="./ss/additional.html" class="ssli"> Additional Streams </a></li>
 			</ul>
 		</div>
-		<hr>
 
-		<div class="textbooks">
-			<h1 id="descbar" style="display: inline-block;">Study Timer</h1>
+		<hr class="maintabs">
+
+		<h1 id="descbar" class="maintabs" style="display: inline-block;">Study Timer</h1>
+		<div class="tab" id="eduprompt">
+			<button type="button" class="tab maintabs" onclick="opentab('menu3'); document.getElementById('descbar').innerText = 'Study Timer';document.getElementById('menu3').style.display = 'flex';" style="display: block;">
+				<div class="card myhover">
+					<div class="topic">
+						Study in intervals of 25 minutes and 5 minute breaks
+					</div>
+				</div>
+			</button>
+		</div>
+
+		<div class="textbooks" id="menu3" style="display: none;">
+			<button class="card" id="rtWork" onclick="startTimer(0, 5, 'Time for a break...', 'rtWork', 'rtRest', 'pWork', 'pRest', 'rtPanel1', 'rtPanel2');" style="display: inline-block;width: 15%;">Study</button>
+			<div class="card" id="pWork" style="display: none;width: 15%;">Studying</div>
+			<button class="card" id="rtRest" onclick="startTimer(0, 3, 'Let\'s get working!', 'rtRest', 'rtWork', 'pRest', 'pWork', 'rtPanel2', 'rtPanel1');" style="display: none; width: 15%;">Rest</button>
+			<div class="card" id="pRest" style="display: none;width:15%">Resting</div>
 
 			<h1 id="rtdisp" style="display: inline; background: var(--prm);border-radius: 5px;padding: 5px;">
 				Start the study timer
 			</h1>
 
-			<button class="card" id="rtWork" onclick="startTimer(25, 0, 'Time for a break...', 'rtWork', 'rtRest', 'pWork', 'pRest');" style="display: inline-block;">Study (25 min)</button>
-			<div class="card" id="pWork" style="display: none;">Studying...</div>
-			<button class="card" id="rtRest" onclick="startTimer(5, 0, 'Let\'s get working!', 'rtRest', 'rtWork', 'pRest', 'pWork');" style="display: none;">Rest (5 min)</button>
-			<div class="card" id="pRest" style="display: none;">Resting...</div>
+			<div class="card" id="rtPanel1" style="width:15%;">25 min</div>
+			<div class="card" id="rtPanel2" style="width:15%;display:none">5 min</div>
 		</div>
 
 		<footer>
