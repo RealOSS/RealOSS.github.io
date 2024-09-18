@@ -6,6 +6,6 @@
 - Unify e-textbook sources under one platform  
 ## Platforms  
 - [Web Version](https://pioneersmtnp.github.io)  
-- ~~Windows~~ (discontinued)
+- Windows
 - Linux (64-Bit)  
 - Android (APK)  
