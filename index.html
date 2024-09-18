@@ -35,14 +35,14 @@
 		</div>
 		<div id="eduprompt">
 			<button type="button" class="tab" onclick="opentab('menu1')">
-				<div class="card">
+				<div class="card myhover">
 					<div class="topic">
 						Primary School
 					</div>
 				</div>
 			</button>
 			<button type="button" class="tab" onclick="opentab('menu2')">
-				<div class="card">
+				<div class="card myhover">
 					<div class="topic">
 						Secondary School
 					</div>
@@ -70,15 +70,20 @@
 			</ul>
 		</div>
 		<hr>
-		<h1 id="descbar" style="display: inline-block;">
-			Study Timer
-		</h1>
-		<br>
-		<button id="rtWork" onclick="startTimer(0, 5, 'Time for a break...', 'rtWork', 'rtRest');" style="display: inline-block;">Study (25 min)</button>
-		<button id="rtRest" onclick="startTimer(0, 3, 'Let\'s get working!', 'rtRest', 'rtWork');" style="display: none;">Rest (5 min)</button>
-		<h1 id="rtdisp">
-			Start the study timer
-		</h1>
+
+		<div class="textbooks">
+			<h1 id="descbar" style="display: inline-block;">Study Timer</h1>
+
+			<h1 id="rtdisp" style="display: inline; background: rgba(0, 0, 0, 0.8);border-radius: 5px;">
+				Start the study timer
+			</h1>
+
+			<button class="card" id="rtWork" onclick="startTimer(25, 0, 'Time for a break...', 'rtWork', 'rtRest', 'pWork', 'pRest');" style="display: inline-block;">Study (25 min)</button>
+			<div class="card" id="pWork" style="display: none;">Studying...</div>
+			<button class="card" id="rtRest" onclick="startTimer(5, 0, 'Let\'s get working!', 'rtRest', 'rtWork', 'pRest', 'pWork');" style="display: none;">Rest (5 min)</button>
+			<div class="card" id="pRest" style="display: none;">Resting...</div>
+		</div>
+
 		<footer>
 			Copyright 2023 by PioneersMTNP. All Rights Reserved.
 		</footer>

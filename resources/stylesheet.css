@@ -83,7 +83,7 @@ a:link, a:visited, a:hover, a:active{
 	background: var(--prm);
 	font-family: "Balsamiq Sans", cursive;
 }
-.card:hover{
+.myhover:hover{
 	background-color: var(--hvr);
 	color: var(--prm);
 }

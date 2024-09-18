@@ -1,5 +1,9 @@
-function startTimer(xMin, xSec, message, buta, butb){
-		document.getElementById(buta).style.display = "none";
+function startTimer(xMin, xSec, message, buta, butb, pana, panb){
+	document.getElementById(buta).style.display = "none";
+	document.getElementById(butb).style.display = "none";
+	document.getElementById(panb).style.display = "none";
+	document.getElementById(pana).style.display = "inline-block";
+	document.getElementById("rtdisp").innerText = "Starting...";
 
 	let timeOut = setInterval(() => {
 
@@ -16,6 +20,7 @@ function startTimer(xMin, xSec, message, buta, butb){
 			xSec = 60;
 		}else if(xSec == 0 && xMin == 0){
 			document.getElementById("rtdisp").innerText = message;
+			document.getElementById(pana).style.display = "none";
 			document.getElementById(butb).style.display = "inline-block";
 			//alert(message);
 			clearInterval(timeOut);
