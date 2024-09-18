@@ -19,6 +19,19 @@
 				<button id="inilink" onclick="localStorage.setItem('openmenu', 0); location.reload();" type="button" style="font-family: Balsamiq Sans;display:none;"> &lt; </button>
 			</div>
 		</header>
+
+		<div class="container">
+			<div class="pomodoro">
+				<h1 id="rtdisp">
+					Pomodoro Timer
+				</h1>
+				<button class="timerbuttons" id="rtWork" onclick="startTimer(25, 0, 'Time for a break...', 'rtWork', 'rtRest', 'pWork', 'pRest');" style="display: inline-block;">Study (25 min)</button>
+				<div class="timerbuttons" id="pWork" style="display: none;">Studying...</div>
+				<button class="timerbuttons" id="rtRest" onclick="startTimer(5, 0, 'Let\'s get working!', 'rtRest', 'rtWork', 'pRest', 'pWork');" style="display: none;">Rest (5 min)</button>
+				<div class="timerbuttons" id="pRest" style="display: none;">Resting...</div>
+			</div>
+		</div>
+
 		<div class="textbooks">
 			<h1 id="descbar">
 				E-textbooks catalogue
@@ -69,23 +82,10 @@
 				<li><a id="mlink" href="./ss/additional.html" class="ssli"> Additional Streams </a></li>
 			</ul>
 		</div>
-		<hr>
-
-		<div class="textbooks">
-			<h1 id="descbar" style="display: inline-block;">Study Timer</h1>
-
-			<h1 id="rtdisp" style="display: inline; background: var(--prm);border-radius: 5px;padding: 5px;">
-				Start the study timer
-			</h1>
-
-			<button class="card" id="rtWork" onclick="startTimer(25, 0, 'Time for a break...', 'rtWork', 'rtRest', 'pWork', 'pRest');" style="display: inline-block;">Study (25 min)</button>
-			<div class="card" id="pWork" style="display: none;">Studying...</div>
-			<button class="card" id="rtRest" onclick="startTimer(5, 0, 'Let\'s get working!', 'rtRest', 'rtWork', 'pRest', 'pWork');" style="display: none;">Rest (5 min)</button>
-			<div class="card" id="pRest" style="display: none;">Resting...</div>
+		<div class="container">
+			<footer>
+				Copyright 2023 by PioneersMTNP. All Rights Reserved.
+			</footer>
 		</div>
-
-		<footer>
-			Copyright 2023 by PioneersMTNP. All Rights Reserved.
-		</footer>
 	</body>
 </html>
