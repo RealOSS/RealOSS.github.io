@@ -73,7 +73,7 @@ a:link, a:visited, a:hover, a:active{
 	display: block;
 	border: 2px solid white;
 	border-radius: 25px;
-	margin:10px;
+	margin: 10px;
 	padding: 10px;
 	color: var(--fnt);
 	font-size: 175%;
@@ -98,11 +98,11 @@ a:link, a:visited, a:hover, a:active{
 	display: contents;
 }
 .topic{
-	font-size: 125%;
+	font-size: 155%;
 	border-bottom: none;
 	display: inline-block;
-	margin-bottom: 2%;
 	justify-content: center;
+	padding: 10px;
 }
 .essay{
 	font-size: 150%;
@@ -143,7 +143,7 @@ a:link, a:visited, a:hover, a:active{
 	margin: 2px;
 }
 footer{
-	display: block;
+	display: inline-block;
 	margin: 20px;
 	padding: 20px;
 	text-align: center;
@@ -184,6 +184,39 @@ footer{
 .tab{
 	width: 100%;
 }
+
+.container{
+	text-align: center; 
+}
+
+.pomodoro{
+	display: inline-block;
+	padding: 10px;
+	border-radius: 25px;
+	font-size: 150%;
+	text-align: center;
+}
+
+.timerbuttons{
+	display: inline-block;
+	background-color: var(--prm);
+	padding: 10px;
+	border-radius: 25px;
+	font-size: 120%;
+	text-align: center;
+	color: white;
+	border: 2px var(--prm) ;
+	font-family: inherit;
+}
+
+#rtdisp{
+	display: block;
+	text-align: center;
+	background-color: var(--sec);
+	padding: 20px;
+	border-radius: 25px;
+}
+
 @media only screen and (max-width: 767.98px) {
 	.notdownload{
 		display: block;
