@@ -1,4 +1,4 @@
-function startTimer(xMin, xSec, message, buta, butb, pana, panb, ){//panc, pand){
+function startTimer(xMin, xSec, message, buta, butb, pana, panb){//panc, pand){
 	document.getElementById(buta).style.display = "none";
 	document.getElementById(butb).style.display = "none";
 	document.getElementById(panb).style.display = "none";
